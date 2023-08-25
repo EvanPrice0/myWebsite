@@ -26,9 +26,9 @@ const HeaderBarInternal = ({ links }: Props) => {
                 <div ref={menuRef} className="container-outer">
                     <Card className="container-inner">
                         <div className="nav-item">
-                            <Link href={'/'}>Home</Link>
+                            <Link href={'/'} onClick={() => { setShowSidebar(false) }}>Home</Link>
                             {links.map(({ link, display }: RoutingLink) => {
-                                return (<Link key={`links-${link}-${display}`} href={`/${link}`}>{display}</Link>)
+                                return (<Link onClick={() => { setShowSidebar(false) }} key={`links-${link}-${display}`} href={`/${link}`}>{display}</Link>)
                             })}
 
                         </div>

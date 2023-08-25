@@ -11,7 +11,10 @@ export const SidebarProvider = ({ children }: React.PropsWithChildren<any>) => {
             setShowSidebar(false)
         }
     }
-    document.addEventListener('mousedown', closeOpenMenus)
+
+    if (typeof window !== "undefined") {
+        document.addEventListener('mousedown', closeOpenMenus)
+    }
 
     const sidebarProps = { showSidebar, setShowSidebar, menuRef }
     return (<SidebarContext.Provider value={sidebarProps}>

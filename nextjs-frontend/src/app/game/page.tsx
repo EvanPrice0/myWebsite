@@ -1,7 +1,9 @@
+import { EntryPage } from "./views/EntryPage";
+
 export const Game = () => {
-    return (<div>
-        Game
-    </div>)
+    return (
+        <EntryPage />
+    )
 }
 
 export default Game;
