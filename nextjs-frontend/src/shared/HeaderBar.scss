@@ -1,0 +1,40 @@
+.container {
+    &-outer{
+        width: 10rem;
+        display: flex;
+    }
+    &-inner{
+        display: flex;
+    }
+    &-header-closed{
+        position: fixed;
+        z-index: 1000;
+        .nav-open{
+            opacity: 1;
+            background-color: white;
+            width: 2rem;
+            border-radius: 0.3rem;
+            box-shadow: 2px 2px 4px black;
+        }
+    }
+    &-header-open{
+        display: flex;
+    }
+
+}
+
+
+.nav-item {
+    position: fixed;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    padding: .75rem;
+
+    a {
+        padding: .75rem;
+    }
+}
+.nav-close {
+    margin: 0 8rem;
+}

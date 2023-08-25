@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    height: 100vh;
+    .children{
+        flex: 8; 
+    }
+}
+.intro-card{
+    height: 100%;
+    overflow-x: scroll;
+}
