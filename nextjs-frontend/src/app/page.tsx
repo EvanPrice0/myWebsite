@@ -15,7 +15,7 @@ export default function Home() {
     };
   }
   return (
-    <div>
+    <div className="homepage">
       <h1>Evan Price</h1>
       <h2>Welcome to my website</h2>
       <ImageList variant="quilted"
